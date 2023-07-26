@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -30,7 +30,10 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'color-primary-bg': '#F85559',
+                        'color-primary': '#FFF',
+                        'color-secondary': '#121212CC',
+
                     }
                 }
             }
@@ -40,7 +43,57 @@
 
 </head>
 
-<header></header>
+<header>
+    <!-- navbar  -->
+    <nav class="container mx-auto mt-8 lg:mt-12">
+        <div
+            class="flex flex-row-reverse lg:flex-row justify-between lg:justify-between  items-center lg:bg-color-primary-bg py-1 lg:py-7 px-6 lg:px-14 lg:text-color-primary lg:rounded-[600px]">
+            <div class="">
+                <div class="dropdown dropdown-end lg:hidden">
+                    <label tabindex="0" class=" btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="#121212"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm absolute dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-lg text-color-secondary">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 font text-lg">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class=" flex items-center justify-center gap-2 lg:gap-7">
+                <img class="w-7 h-8 lg:w-14 lg:h-14" src="./images/logo.png" alt="">
+                <h3 class="text-xl lg:text-4xl font-bold">Fruit Burst</h3>
+            </div>
+            <div class="hidden lg:flex">
+                <div class="form-control relative hidden lg:flex">
+                    <input type="text" placeholder="Search" class="input input-bordered  rounded-[50px] md:w-96" />
+                    <span class="absolute right-4 top-3 bottom-4"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M21 21L15.803 15.803M15.803 15.803C17.2096 14.3965 17.9998 12.4887 17.9998 10.4995C17.9998 8.51035 17.2096 6.60262 15.803 5.19605C14.3964 3.78947 12.4887 2.99927 10.4995 2.99927C8.51029 2.99927 6.60256 3.78947 5.19599 5.19605C3.78941 6.60262 2.99921 8.51035 2.99921 10.4995C2.99921 12.4887 3.78941 14.3965 5.19599 15.803C6.60256 17.2096 8.51029 17.9998 10.4995 17.9998C12.4887 17.9998 14.3964 17.2096 15.803 15.803Z"
+                                stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+</header>
 <main></main>
 <footer></footer>
 
